@@ -32,3 +32,7 @@ Use:
 
 For more configuration options and information you can check:
 https://github.com/gaboelnuevo/mylaunchpad
+
+Preview:
+
+![alt tag](https://github.com/earvingad/LaunchCold/blob/master/LaunchCold-prev.png)
