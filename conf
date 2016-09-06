@@ -1,0 +1,25 @@
+[options]
+# Enable or disable power button
+power_button = yes
+# Power options
+power_options = shutdown, reboot, suspend, lock, logout
+# Use custom power manager like oblogout
+custom_power_manager = oblogout
+# Use custom menu like xfce-applications or lxde-applications
+xdg-menu = default
+# Enable or disable Google Search
+google_search = yes
+# Display params
+icon_size = 53
+row_padding = 20
+col_padding = 60
+button_padding = 20
+container_padding = 0
+opacity = 70
+
+[commands]
+shutdown = sudo shutdown -h now
+suspend = dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend
+reboot = sudo reboot
+lock = xscreensaver-command -lock
+logout = openbox --exit
