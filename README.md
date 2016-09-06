@@ -5,15 +5,10 @@ App Launcher for openbox, based on Gabriel Sabillon's MyLaunchpad (https://githu
 ~ Dependences:
 
 gnome-menus2
-
 pygtk
-
 python-lxml
-
 python-cairo
-
 python-imaging 
-
 python-distutils-extra
 
 How to install:
@@ -23,9 +18,6 @@ How to install:
 ~ Copy files into "~/user/.launchcold"
 
 Use:
-
-	To use default configuration:
-		$python2 /path-to/launchcold
 
 	Use default configuration:
     		$python2 /path-to/launchcold
