@@ -221,10 +221,6 @@ class AppStore:
         t = threading.Thread(target=menu.updateCache())
         t.start()
 
-        # Get Categories
-
-        categories = self.getCategories()
-
         # Create containers
 
         self.mainContainer = gtk.HBox(False, 0)
@@ -881,15 +877,6 @@ class AppStore:
                                 'command': item.find('.//command'
                                 ).text})
         return apps
-
-    def getCategories(self):
-        root = etree.parse(self.appsmenu)
-        categories = []
-        for item in root.xpath('/xdg-menu/menu[@id]'):
-            categories.append({'id': item.attrib['id'],
-                              'label': item.attrib['label'],
-                              'icon': item.attrib['icon']})
-        return categories
 
     def getResults(self, search):
         root = etree.parse(self.appsmenu)
